@@ -1,0 +1,171 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 18px
+	min-width: 320px
+	position: relative
+	line-height: 1.5
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+a 
+	color: $accent
+	&:hover, &:focus
+		color: $accent
+
+.top-line 
+	position: relative
+	height: 65px
+
+	background-color: $dark
+
+.logo 
+	position: absolute
+	left: 0
+	padding-left: 30px
+
+	font-family: baron-g, sans-serif
+	color: #ffffff
+	font-size: 23px
+	text-decoration: none
+	line-height: 65px
+	display: inline-block
+	&:hover, &:focus
+		text-decoration: none
+		color: #fff
+	span 
+		color: $accent
+
+.main-menu
+	padding: 0 100px
+	width: 100%
+
+	text-align: center
+	ul, li 
+		list-style-type: none
+		margin: 0
+		padding: 0
+	li 
+		display: inline-block
+		margin-right: -4px
+		&.active
+			a
+				color: #fff
+				background-color: lighten($dark, 5%)
+		&:hover
+			a
+				color: #fff
+				background-color: lighten($dark, 8%)
+
+	a 
+		display: block
+		padding: 0 15px
+
+		color: #d1d9e0
+		text-decoration: none
+		text-transform: uppercase
+		font-size: 16px
+		font-weight: bold
+		line-height: 65px
+		transition: color .25s, background-color .25s
+
+.search-wrap
+	.search
+		position: absolute
+		right: 0
+		padding: 0 30px 0 10px
+
+		color: #5c6470
+		cursor: pointer
+		line-height: 65px
+		text-align: center
+		transition: color .25s
+		&:hover
+			color: lighten(#5c6470, 10%)
+	.search-field
+		display: none
+		position: absolute
+		left: 0
+		top: 65px
+		
+		width: 100%
+		padding: 15px
+
+		background-color: lighten($dark, 3%)
+		border-top: lighten($dark, 5%) 1px solid
+		z-index: 4
+		input[type=text]
+			width: 100%
+			padding: 8px 15px
+
+			border: lighten($dark, 10%) 1px solid
+			background-color: lighten($dark, 7.5%)
+			font-size: 16px
+			color: #ffffff
+			outline: none
+			&:focus
+				border-color: lighten($dark, 15%)
+			&::placeholder
+				color: rgba(#fff, .2 )
+				font-family: arial, sans-serif
+				font-style: italic
+
+.mobile-menu-button
+	display: none
+	color: #ffffff
+	text-align: center
+	cursor: pointer
+	line-height: 65px
+	font-size: 17px
+	text-transform: uppercase 
+	font-weight: bold
+	white-space: nowrap
+	&:hover 
+		color: $accent
+
+.mobile-menu 
+	display: none
+
+	background-color: lighten($dark, 3%)
+	border-top: lighten($dark, 5%) 1px solid
+	.top-menu
+		display: block
+	li 
+		display: block
+		a 
+			padding: 0
+			line-height: 45px
+
+
+
+@import "media" // Always at the end
