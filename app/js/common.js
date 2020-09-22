@@ -1,4 +1,4 @@
-$(function() {
+$(document).ready(function() {
 
 	$('.logo-litera').each(function() {
 		var ths = $(this);
@@ -7,7 +7,7 @@ $(function() {
 
 	$('.search').click(function() {
 		$('.search-field').stop().slideToggle();
-		$('.search-field input[type=text').focus();
+		$('.search-field input[type=text]').focus();
 	});
 
 	$(document).keyup(function(e) {
