@@ -18,17 +18,22 @@
    .item-title
       &-content
          padding: 40px 30px
+   
+   .second-section, .third-section
+      padding: $gutter/2 0
 
 
 
 // ≥768px
 +media-breakpoint-down(sm)
-   
-   .first-section
-      padding: $gutter/2
 
    .container-fluid
-       padding:  0 $gutter/2
+      padding:  0 $gutter/2
+   
+   .first-section
+      padding: 
+         top: $gutter/2
+         bottom: $gutter/2
 
    .add-top
       margin-bottom: $gutter/2
@@ -36,6 +41,12 @@
    .no-gutters
       .pattern
          margin-bottom: $gutter/2
+   
+   .second-section
+      padding: $gutter/2
+
+   .item-news 
+      margin: $gutter/2 0 0
 
 // ≥576px
 +media-breakpoint-down(xs)
