@@ -570,7 +570,7 @@
 .fa-cogs:before {
   content: "\f085";
 }
-.fa-comments:before {
+.fa-comment:before {
   content: "\f086";
 }
 .fa-thumbs-o-up:before {
@@ -819,7 +819,7 @@
 .fa-comment-o:before {
   content: "\f0e5";
 }
-.fa-comments-o:before {
+.fa-comment-o:before {
   content: "\f0e6";
 }
 .fa-flash:before,
