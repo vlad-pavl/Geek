@@ -660,6 +660,193 @@ div.soc
 			&::before
 				opacity: 0.25
 
+.cat-list-first
+	padding-top: $gutter
+	background-color: #f5f5f5
+
+.type-one-cat
+	background-color: transparent
+	padding: 0
+
+.cat-list
+	padding-top: $gutter
+	background-color: #fff
+
+a.cat-list-item
+	color: $text
+	display: block
+	text-decoration: none
+	margin:
+		bottom: $gutter/1.5
+		top: $gutter/1.5
+	padding-bottom: 4px
+	border-bottom: 1px solid #dfdfdf
+	h2, h3
+		transition: color .25s ease
+		line-height: 1.2
+		font-size: 21px
+		font-weight: 800
+		margin: 0
+	img
+		transition: opacity .25s ease
+		margin-bottom: 12px
+	p
+		font-size: 15.4px
+		margin-top: 10px
+	.date
+		margin-top: 5px
+	&:hover
+		.pattern
+			&::before
+				top: 10px
+				right: 10px
+				bottom: 10px
+				left: 10px
+				opacity: 0.2
+				z-index: 10
+			img
+				opacity: 0.75
+		h2, h3
+			text-decoration: underline
+			color: $accent
+		p
+			color: $text
+	&:last-child
+		border-bottom: none
+
+.main-aside 
+	margin-bottom: $gutter
+
+.lb-header 
+	border-bottom: 2px solid $accent
+	padding-bottom: 5px
+
+.lb-header, .all-posts-header
+	margin: 0 
+
+	font-size: 21px 
+	font-weight: 800 
+	text-align: left
+
+.lb-item
+	position: relative
+	padding-left: 120px
+	background-color: #f0f0f0
+	margin-bottom: 2px
+	transition: background-color .25s ease
+	text-align: left
+	&:hover
+		background-color: $accent
+
+		.lb-catname
+			color: #ffffff
+
+	.lb-body
+		background-color: #f9f9f9
+		padding: 10px 15px
+		a
+			color: $text
+			transition: color .25s ease
+			&:hover
+				color: $accent
+
+	&-header
+		font-size: 14px
+		line-height: 1.4
+		display: block
+		font-weight: 500
+
+	.date
+		display: inline-block
+		margin-left: 20px
+		color: #aaaaaa
+		margin-top: 0
+
+	.item-comments
+		.fa
+			font-size: 12px
+			margin-right: 5px
+			color: #aaaaaa
+
+		.item-comments-count
+			color: #aaaaaa
+			&:hover
+				color: $accent
+				&::fater
+					color: #aaaaaa
+
+.lb-catname 
+	position: absolute
+	left: 15px
+	top: 15px
+	max-width: 90px
+
+	color: #888888
+	font-size: 14px
+	font-weight: 800
+
+	transition: color .25s ease
+	&:hover
+		text-decoration: underline
+	&:focus
+		color: #888888
+
+.lb-footer 
+	line-height: 1.2
+
+.latest-box 
+	text-align: left
+
+	.lb-header 
+		margin-bottom: 15px
+
+.pagination-section 
+	padding: $gutter*2 0
+	background-color: #f5f5f5
+	&-first 
+		margin-bottom: $gutter
+		padding: $gutter 0
+		background: none
+		border-bottom: 1px solid #dfdfdf
+
+.pagination 
+	padding-top: 12px
+
+	a, span 
+		display: inline-block 
+		margin-top: 5px 
+		width: 42px
+		height: 42px
+
+		font-size: 18px
+		color: #666666
+		font-weight: 800
+		text-decoration: none
+		line-height: 40px
+
+		border: 2px solid #e5e5e5 
+		border-radius: 10em
+		transition: border-color .25s ease, color .25s ease
+	a 
+		&:hover
+			border-color: $accent 
+			color: $accent
+		&.pagination-left, &.pagination-right 
+			color: $accent 
+	
+	span 
+		&.active 
+			border-color: $accent 
+			color: $accent
+
+	.pagination-left, .pagination-right 
+		width: 30px
+		border: none
+		font-size: 32px
+			
+
+
+	
 	
 
 
