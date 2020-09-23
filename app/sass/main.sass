@@ -17,6 +17,7 @@ body
 	font-family: $default-font
 	overflow-x: hidden
 	color: $text
+
 	input, textarea
 		border: #666 1px solid
 		outline: none
@@ -112,6 +113,7 @@ a
 		transition: color .25s
 		&:hover
 			color: lighten(#5c6470, 10%)
+
 	.search-field
 		display: none
 		position: absolute
@@ -158,6 +160,7 @@ a
 
 	background-color: lighten($dark, 3%)
 	border-top: lighten($dark, 5%) 1px solid
+
 	.top-menu
 		display: block
 	li 
@@ -203,6 +206,7 @@ section
 		padding: 40px
 
 		color: #fff
+
 		h3 
 			margin: 0
 
@@ -240,6 +244,7 @@ section
 			right: 10px
 			bottom: 10px
 			left: 10px
+
 		.overlay
 			&::before
 				opacity: 0.75
@@ -291,6 +296,7 @@ section
 .likely-custom 
 	display: inline-block
 	font-size: 12px
+
 	.likely__button
 		padding-left: 15px
 	> div
@@ -301,8 +307,10 @@ section
 		border: 1px solid #ffffff
 		border-radius: 2px
 		cursor: pointer
+
 	.likely__counter
 		display: none
+
 	svg
 		position: absolute
 		top: 3.5px
@@ -319,9 +327,11 @@ section
 
 .news-wrap
 	padding-bottom: $gutter/2
+
 	.pattern
 		&::before
 			display: none
+
 	.overlay
 		&::before
 			opacity: 0.4
@@ -358,18 +368,21 @@ section
 .aside-box
 	margin-bottom: $gutter
 	text-align: center
+
 	.img-responsive
 		display: inline-block
 
 .dark-section
 	padding: 30px 0
 	background-color: $dark
+
 	h2 
 		a 
 			color: #ffffff
 
 .col-item
 	margin: 12px 0 15px
+
 	a 
 		text-decoration: none
 		transition: color .25s ease
@@ -378,8 +391,10 @@ section
 
 	.item-comments
 		margin-top: 2px
+
 		.fa, .item-comments-count
 			color: #49505a
+
 		.fa 
 			font-size: 12px
 			margin:
@@ -424,6 +439,7 @@ section
 
 	.item-title
 		min-width: 300px
+
 		.date 
 			display: inline-block
 			margin-left: 20px
@@ -432,6 +448,65 @@ section
 
 	.item-social
 		margin-top: 1px
+
+.type-one
+	&-header 
+		margin-bottom: $gutter/2
+	&-first 
+			> a 
+				display: block 
+				background-color: $dark
+
+			.item-social 
+				margin-top: 8px
+
+				a, .item-comments, .date 
+					color: #a0a0a0
+					font-size: 13px
+
+				.item-comments-count 
+					font-size: 12px
+
+				.date
+					display: inline-block
+					margin-left: 20px
+
+			h3 
+				margin-top: 8px
+				margin-bottom: 30px
+
+				font-size: 22px
+				text-transform: uppercase
+				font-weight: 800
+				line-height: 1.2
+
+				a 
+					display: block
+					color: $text
+					&:hover
+						color: $accent
+	.pattern 
+		margin-bottom: $gutter
+
+.item-title-white 
+	.date 
+		display: inline-block
+		margin-left: 20px
+
+		font-size: 13px
+		color: #fff
+	
+	.item-comments-count 
+		font-size: 12px
+	
+	.item-social 
+		margin-top: 0
+	
+	.item-title
+		min-height: 230px
+		&-content 
+			padding: 40px 40px 25px
+
 
 
 
