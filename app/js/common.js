@@ -36,4 +36,10 @@ $(document).ready(function() {
 		lnk.removeClass('hover')
 	});
 
+	$("body").prognroll({
+		height: 3,
+		color: "orange",
+		custom: false
+	});
+
 });
