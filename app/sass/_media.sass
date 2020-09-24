@@ -29,6 +29,12 @@
             margin-bottom: 0
             padding-bottom: 0
             border-bottom: 0
+   
+   .ispage 
+      .top-menu 
+         position: relative
+         top: 65px
+
 
 
 // ≥768px
@@ -77,6 +83,21 @@
 
          h1, h2 
             font-size: 28px
+
+   .page-header
+      min-height: 420px
+      &-meta 
+         h1 
+            font-size: 24px 
+            margin: 10px 0 0
+      &.overlay::before
+         background-image: linear-gradient(rgba(#000, .3), rgba(#000, .75))
+      &-content 
+         bottom: 10px
+
+   .article-body 
+      blockquote 
+         margin: 0
 
 
 // ≥576px
